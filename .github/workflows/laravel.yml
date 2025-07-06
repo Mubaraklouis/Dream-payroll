@@ -41,7 +41,7 @@ jobs:
         context: .
         file: docker/Dockerfile # Point to actual Dockerfile
         push: true
-        tags: mubaraklouis/dreampayroll:0.0.1
+        tags: mubaraklouis/dreampayroll:0.0.0
         build-args: |
           WWWGROUP=1000
           WWWUSER=1000
