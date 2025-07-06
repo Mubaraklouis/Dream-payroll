@@ -18,7 +18,7 @@ jobs:
     - name: Checkout private env repository
       uses: actions/checkout@v4
       with:
-        repository: Mubaraklouis/focusflow-env # Must use format {owner}/{repo}
+        repository: Mubaraklouis/payrollenv # Must use format {owner}/{repo}
         token: ${{ secrets.ENV_REPO_PAT }} # Personal access token with repo access
         path: env-repo
 
@@ -41,7 +41,7 @@ jobs:
         context: .
         file: docker/Dockerfile # Point to actual Dockerfile
         push: true
-        tags: mubaraklouis/focusflow:1.4.6
+        tags: mubaraklouis/dream-payroll
         build-args: |
           WWWGROUP=1000
           WWWUSER=1000
