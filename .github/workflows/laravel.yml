@@ -1,4 +1,4 @@
-name: focusFlow CI/CD
+name: payroll CI/CD
 
 on:
   push:
